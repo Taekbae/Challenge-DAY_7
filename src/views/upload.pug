@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    .form-container
+        form(action="/upload", method="post", enctype="multipart/form-data")
+            label(for="file") Text file
+            input(type="file", id="file", name="textfile", required=true, accept=".txt")
+            input(type="submit", value="Upload Text")
